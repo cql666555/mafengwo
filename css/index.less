@@ -1,0 +1,223 @@
+
+// 导航
+.nav{
+    display: flex;
+    width: 100%;
+    height: 1.33rem;
+    line-height: 1.33rem;
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
+    .logo{
+        img{
+            width: 2.51rem;
+            height: .67rem;
+            padding: 0 10px;
+        }
+    }
+    .login{
+        width: 40px;
+        height: 100%;
+        font-size: 14px;
+        text-align: center;
+        a{
+            color: #ffa800;
+        }
+    }
+    .search{
+        width: 5.89rem;
+        height: 0.6929rem;
+        line-height: 0.6929rem;
+        border-radius: 0.3464rem;
+        background-color: #f3f3f3;
+        margin-top: 0.3185rem;
+        padding-left: .32rem;
+        position: relative;
+        input{
+            float: left;
+            width: 4.64rem;
+            height: .266rem;
+            padding: .213rem 0;
+            font-size: .32rem;
+            background-color: #f3f3f3;
+        }
+        button{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: .933rem;
+            height: .8rem;
+            background: url(../images/btn_search2.png) no-repeat center;
+            background-size: .453rem;
+        }
+    }
+}
+
+// 轮播图
+.banner{
+    width: 100%;
+    height: 5.627rem;
+    img{
+        width: 100%;
+        height: 5.627rem;
+    }
+}
+
+// 菜单
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .2rem .2rem .8rem;
+    .item{
+        width: 25%;
+        padding: .533rem 0 0;
+        text-align: center;
+        span{
+            width: 1.22rem;
+            height: 1.22rem;
+            display: inline-block;
+            background: url(../images/i_nav6.png);
+            background-size: 5rem;
+        }
+        p{
+            font-size: .426rem;
+            color: #ff9d00;
+        }
+    }
+    .item:nth-of-type(2){
+        span{
+            background-position: 0 -1.24rem;
+        }
+        p{
+            color: #feca2b;
+        }
+    }
+    .item:nth-of-type(3){
+        span{
+            background-position: -2.48rem -1.24rem;
+        }
+        p{
+            color: #42d6ba;
+        }
+    }
+    .item:nth-of-type(4){
+        span{
+            background-position: -1.24rem -1.24rem;
+        }
+        p{
+            color: #f94a87;
+        }
+    }
+    .item:nth-of-type(5){
+        span{
+            background-position: -1.24rem 0;
+        }
+        p{
+            color: #32a2f1;
+        }
+    }
+    .item:nth-of-type(6){
+        span{
+            background-position: -2.48rem 0;
+        }
+        p{
+            color: #fd4e4e;
+        }
+    }
+    .item:nth-of-type(7){
+        span{
+            background-position: -3.72rem -1.24rem;
+        }
+        p{
+            color: #b160df;
+        }
+    }
+}
+
+// 主体
+.container{
+    .title{
+        height: 0.533rem;
+        line-height: 0.533rem;
+        margin-left: .4rem;
+        font-size: .533rem;
+        padding-left: 5px;
+        border-left: #ffdb53 solid 3px;
+    }
+    .list{
+        background: url(../images/line3.png) repeat-x 0 bottom;
+        padding: .4rem;
+        h4{
+            padding-right: 1.5rem;
+            font-size: .506rem;
+            font-weight: normal;
+            color: #111;
+            line-height: 1.4em;
+            max-height: 1.3rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .info{
+            display: flex;
+            padding-top: .24rem;
+            >img{
+                width: 3.466rem;
+                height: 2.4rem;
+                background-color: red;
+            }
+            .msg {
+                
+                p{
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    
+                    padding: .14rem 0 0;
+                    line-height: 1.3em;
+                    font-size: .373rem;
+
+                    margin-left: 0.4rem;
+                    color: #999;
+                }
+                p:last-child{
+                    font-size: .32rem;
+                    margin-top: 0.2rem;
+                    display: flex;
+                    justify-content: space-between;
+                    img{
+                        width: .533rem;
+                        height: .533rem;
+                        border-radius: 50%;
+                        vertical-align: middle;
+                        margin: 0 0 .04rem .133rem;
+                        background-color: #32a2f1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 显示更多
+.showMore{
+    font-size: .373rem;
+    padding: 20px;
+    text-align: center;
+    color: #2185FA;
+}
+
+// 返回页面顶部
+.backTop{
+    display: none;
+    position: fixed;
+    width: 1.066rem;
+    height: 1.066rem;
+    right: .4rem;
+    bottom: 2rem;
+    background: url(../images/backtop.png) no-repeat;
+    background-size: 1.066rem;
+}
